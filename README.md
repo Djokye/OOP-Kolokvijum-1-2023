@@ -5,6 +5,8 @@ destruktor).
 - Izbeći na svaki način dupliranje koda u celom projektu.
 - Pridržavati se osnovnih principa objektno orijentisanog programiranja.
 - Zabranjena upotreba ugrađenog tipa string.
+
+
 Zadatak A:
 Predškolska ustanova organizuje dodelu paketića za doček Nove godine. Paketić sadrži različit broj poklona.
 Glavni program treba da omogući sledeće:

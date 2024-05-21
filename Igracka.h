@@ -2,6 +2,7 @@
 #include<iostream>
 #include"poklon.h"
 #include <ctype.h>
+#include<fstream>
 using namespace std;
 class Igracka : public Poklon
 {
@@ -16,11 +17,10 @@ public:
 	{
 		materijal = new char[strlen(mat) + 1];
 		strncpy(materijal, mat, strlen(mat) + 1);
-
 	}
 	~Igracka()
 	{
-		if (materijal!=nullptr)
+		if (materijal != nullptr)
 		{
 			delete materijal;
 			materijal = nullptr;
@@ -35,6 +35,10 @@ public:
 	int vecibrm() override
 	{
 		return broj_masnica + 2;
+	}
+
+	void upisi(ofstream& o) override {
+		o << "cena: " << cena << "broj masnica: " << broj_masnica << "procenat kakaa: " << materijal << endl;
 	}
 };
 

@@ -1,0 +1,4 @@
+cena: 1000broj masnica: 0procenat kakaa: plisana
+cena: 100broj masnica: 0procenat kakaa: 20
+cena: 1020broj masnica: 2procenat kakaa: plisana
+cena: 105broj masnica: 3procenat kakaa: 33

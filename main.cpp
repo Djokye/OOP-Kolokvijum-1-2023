@@ -22,29 +22,31 @@ void main()
 	// 2 poena
 		for (int i = 0; i < p.BrojPoklona() / 2; i++)
 		{
+		p.Add(new Igracka(1000 + i * 20, (i + 1) * i, "plisana"));
 		p.Add(new Cokolada(100 + i * 5, i * 3, 20 + i * 13));
-		p.Add(new Igracka(1000 + i * 20.37, (i + 1) * i, "plisana"));
 		}
 	for (int i = 0; i < pp->BrojPoklona() / 2; i++)
 		{
 		pp->Add(new Cokolada(100 + i * 5, i * 3, 20 + i * 13));
-		pp->Add(new Igracka(1000 + i * 20.37, (i + 1) * i, "plasticna"));
+		pp->Add(new Igracka(1000 + i * 20, (i + 1) * i, "plasticna"));
 		}
 	// 2 poena
 		p.print();
 		pp->print();
 		//cout << p << endl;
-	
+		cout << endl;
+		cout << endl;
 		// 2 poena
-		//Paketic ppp = p + *pp;
-	//ppp.print();
+		Paketic ppp = p + *pp;
+	ppp.print();
 		//cout << ppp << endl;
-	
+	cout << endl;
+	cout << endl;
 		// 2 poena
 		delete pp;
 	
 		// 2 poena
-		//p.Save("paketici.txt");
+		p.Save("paketici.txt");
 	
 		// 2 poena
 		Poklon * pmaxMasnica = p.Max();
@@ -57,7 +59,8 @@ void main()
 		//cout << cPaketic << endl;
 	
 		 // 2 poena
-		//p.RemoveMinimum(&p1);
+		//p.RemoveMinimum();
+		p.print();
 	//cout << p << endl;
 	//cout << p1;
 }

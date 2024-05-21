@@ -1,5 +1,6 @@
 #pragma once
 #include<iostream>
+#include<fstream>
 using namespace std;
 class Poklon
 {
@@ -17,9 +18,10 @@ public:
 		cena = cen;
 		broj_masnica = bm;
 	}
-	~Poklon() {}
+	virtual ~Poklon() {}
 
 	virtual void print() = 0; 
 	virtual int vecibrm() = 0;
+	virtual void upisi(ofstream& o) = 0;
 };
 
